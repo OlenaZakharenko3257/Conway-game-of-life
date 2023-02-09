@@ -84,12 +84,9 @@ namespace ConwayGameOfLife
 
                     int row = i + x;
                     int col = j + y;
-                    if (row >= 0 && row < height && col >= 0 && col < width)
+                    if (row >= 0 && row < height && col >= 0 && col < width && matrix[row, col] == 1)
                     {
-                        if (matrix[row, col] == 1)
-                        {
                             liveNeighbors++;
-                        }
                     }
                 }
             }

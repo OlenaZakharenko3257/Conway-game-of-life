@@ -2,16 +2,16 @@
 
 namespace ConwayGameOfLife
 {
-    public class Program
+    static class Program
     {
         private const uint NumOfGenerations = 80;
         private const int Height = 15;
         private const int Width = 30;
 
-        private static void Main(string[] args)
+        private static void Main()
         {
             int generations = 0;
-            GameOfLife game = new GameOfLife(Height, Width);
+            GameOfLife game = new(Height, Width);
 
             while (generations++ < NumOfGenerations)
             {
